@@ -26,11 +26,11 @@
     <a-scene>
       <a-assets>
         <img id="show-room" crossorigin="anonymous" src="https://i.ibb.co/BBV9QPg/360-car5.jpg">
-        <img id="show-room-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
-        <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
+        <img id="show-room-thumb" crossorigin="anonymous" src="https://i.ibb.co/2KCPcL0/Thumb1.png">
+        <img id="car-1-interior-thumb" crossorigin="anonymous" src="https://i.ibb.co/wKxz114/Thumb3.jpg">
         <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="cubes" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
+        <img id="car-1-interior" crossorigin="anonymous" src="https://iili.io/2XXRiQ.jpg">
         <img id="sechelt" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
 
       </a-assets>
@@ -41,10 +41,10 @@
              animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
 
       <!-- Image links. -->
-      <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#show-room" data-thumb="#show-room-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+      <a-entity id="links" layout="type: line; margin: 1.5" position="-3.9 -0.4 -4">
+        <a-entity template="src: #link" data-src="#car-1-interior" data-thumb="#car-1-interior-thumb"></a-entity>
+         <!--<a-entity template="src: #link" data-src="#show-room" data-thumb="#show-room-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>-->
       </a-entity>
 
       <!-- Camera + cursor. -->
