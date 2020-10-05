@@ -73,6 +73,29 @@
         animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"
       ></a-sky>
 
+        <a-plane src="https://i.ibb.co/4dVzKJV/download.jpg" position="-0.4 1.1 -1.5" radius="0.5" height="1.6" width:"3.0" visible="false"
+    rotation="0 40"
+     id="test"  
+      event-set__enter="_event: mouseenter; _target: #cylinderText; visible: true" 
+      event-set__leave="_event: mouseleave; _target: #cylinderText; visible: false">  
+    </a-plane>
+
+    <!--<a-entity id="cylinderText"
+          template="src: #link"
+          data-src="#car-1-interior"
+          data-thumb="#car-1-interior-thumb"
+          event-set__makeinvisible="_event: click; visible: false"
+          rotation="0 40" 
+        ></a-entity> -->
+
+    <a-text id="cylinderText" value="Hyundai Creta" align="center" color="red" visible="false"
+       position="-1.5 1.9 -4" rotation="0 40" geometry="primitive: plane; width: 1.5" material="color: #FFF">
+    </a-text>
+    
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+
       <!-- Image links. -->
       <a-entity
         id="links"
