@@ -1,24 +1,28 @@
 {
-  "name": "virualshowroom",
+  "name": "virtualshowroom",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
-    "lite" : "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HegdeShashank/VirualShowRoom.git"
+    "url": "git+https://github.com/HegdeShashank/VirtualShowRoom.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HegdeShashank/VirualShowRoom/issues"
+    "url": "https://github.com/HegdeShashank/virtualshowroom/issues"
   },
-  "homepage": "https://github.com/HegdeShashank/VirualShowRoom#readme",
+  "homepage": "https://HegdeShashank.github.io/virtualshowroom",
+  "private": "true",
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "lite-server": "^2.5.4"
   }
 }
