@@ -60,7 +60,7 @@
         <img
           id="second-show-room-thumb"
           crossorigin="anonymous"
-          src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg"
+          src="https://i.ibb.co/fYb6KbX/Thumb6.jpg"
         />
         <img
           id="second-show-room"
@@ -86,13 +86,6 @@
         event-set__leave="_event: mouseleave; _target: #cylinderText; visible: false">  
       </a-plane>
 
-    <!--<a-entity id="cylinderText"
-          template="src: #link"
-          data-src="#car-1-interior"
-          data-thumb="#car-1-interior-thumb"
-          event-set__makeinvisible="_event: click; visible: false"
-          rotation="0 40" 
-        ></a-entity> -->
 
     <a-text id="cylinderText" value="Hyundai Creta" align="center" color="red" visible="false"
        position="-1.5 1.9 -4" rotation="0 40" geometry="primitive: plane; width: 1.5" material="color: #FFF">
@@ -116,18 +109,17 @@
           rotation="0 40"
         ></a-entity>
 
+      </a-entity>
+
         <a-entity
           template="src: #link"
           data-src="#second-show-room"
           data-thumb="#second-show-room-thumb"
           event-set__makeinvisibletw="_event: click; visible: false"
-          rotation="0 40"
+          rotation="0 -40"
+		  position="3.2 0.5 -4"
         ></a-entity>
-
-        <!--<a-entity template="src: #link" data-src="#show-room" data-thumb="#show-room-thumb"></a-entity>
-        <a-entity   template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>-->
-      </a-entity>
-
+		
       <!-- Camera + cursor. -->
       <a-entity camera look-controls>
         <a-cursor
